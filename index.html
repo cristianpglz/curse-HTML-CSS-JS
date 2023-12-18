@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterdoc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
@@ -16,8 +19,14 @@
         <form action="">
             <div class="itemform">
               <label for="nick">Introduce tu nick:</label>
-              <input type="text" id="nick" minlength="2" maxlength="64" size="14" required>
+              <input type="text" name="nick" id="nicka" value="@" readonly>
+              <input type="text" name="nick" id="nick" required>
             </div>
+            <div class="itemform">
+                <label for="email">Correo electronico</label>
+                <input type="text" value="you@ima.es" name="email" id="email" required>
+                
+              </div>
             <div class="itemform">
                 <label for="tamano">Tamaño del juego</label>
                 <select name="tamano" id="tamano">
@@ -33,7 +42,7 @@
             </div>
         </form>
     </main>
-    <footer>
+    <footer> Curso FrontEnd HTML,CSS y JS
 
     </footer>
 </body>
