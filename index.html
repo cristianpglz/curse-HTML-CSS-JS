@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./JS/app.js"></script>
 </head>
 <body>
     <header>
         <img id="image-initial" src="./img/image-initial.png" alt="image initial spider">
     </header>
     <main>
-        <form action="">
+        <form action="juego.html" id="formEntrada">
             <div class="itemform">
-              <label for="nick">Introduce tu nick:</label>
+              <label for="nick">Introduce tu nick</label>
               <input type="text" name="nick" id="nicka" value="@" readonly>
               <input type="text" name="nick" id="nick" required>
             </div>
@@ -30,20 +31,20 @@
             <div class="itemform">
                 <label for="tamano">Tamaño del juego</label>
                 <select name="tamano" id="tamano">
-                    <option value="">--por favor elige un tamaño--</option>
-                    <option value="dog">4x4</option>
-                    <option value="cat">5x5</option>
-                    <option value="hamster">6x6</option>
+                    <option value="0">--por favor elige un tamaño--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
 
                 </select>
             </div>
             <div class="itemform">
-                <input type="submit" value="JUGAR">
+                <input type="submit" value="JUGAR" id="jugar">
             </div>
         </form>
     </main>
     <footer> Curso FrontEnd HTML,CSS y JS
-
     </footer>
+    <script src="./JS/app_new.js"></script>
 </body>
 </html>
